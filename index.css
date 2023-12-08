@@ -1,0 +1,68 @@
+
+
+#offcanvasExample{
+    width: 240px;
+    margin-top: 56px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width:992px) {
+    #toggleSidebar{
+        display: none;
+    }
+    #offcanvasExample{
+        display: none;
+    }
+    #main{
+        transition: margin-left 0.3s; 
+    }
+    #main.shifted{
+        margin-left: none;
+    }
+
+}
+
+#canvas-heading{
+    color:rgb(73, 73, 73);
+    font-size: smaller;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.offcanvas-footer{
+    background-color: rgb(93, 93, 93);
+    font-weight: 500;
+}
+
+    
+
+body{
+    overflow-x: hidden;;
+}
+main{
+    transition: margin-left 0.4s; 
+}
+main.shifted{
+    margin-left: 240px;
+}
+.sidebar-link {
+    display: flex;
+    align-items: center;
+}
+.sidebar-link .right-icon{
+    display: inline-flex;
+    
+}
+.sidebar-link[aria-expanded="true"].right-icon{
+    transform: rotate(rotate 180 degree );
+    transition: 0.1s;
+}
+#footer-text{
+    color: darkgrey;
+    font-weight:bold ;
+    font-size: medium;
+
+}
+
